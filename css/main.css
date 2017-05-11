@@ -1,0 +1,315 @@
+body {
+	font-family: 'Domine', serif;
+	font-size: 0.95em;
+	line-height: 1.5;
+	padding-bottom: 2em;
+}
+
+header {
+	width: 100%;
+	height: 75vh;
+	overflow: hidden;
+	position: relative;
+}
+
+header img {
+	width: 100%;
+	margin-top: -20%;
+}
+
+main {
+	width: 80%;
+	margin: auto;
+}
+
+h1 {
+	line-height: .65;
+	position: absolute;
+	top: 20%;
+	color: #fff;
+}
+
+.five {
+	font-size: 5em;
+	float: left;
+	margin-right: 1%;
+	margin-top: .5em;
+} 
+
+.badass {
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.5em;
+	line-height: .85;
+	color: #997733;
+}
+
+.women {
+	font-size: 1.5em;
+	line-height: .85;
+	text-transform: uppercase;
+}
+
+.wwii {
+	font-size: .65em;
+	text-transform: uppercase;
+}
+
+.pageDescription {
+	color: #666;
+}
+
+.customList {
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.customList li {
+	counter-increment: step-counter;
+	display: block;
+	margin: auto;
+	width: 98%;
+	padding: 1%;
+	border-top: solid rgba(0,0,0,.2) 2px;
+}
+
+.customList li:before {
+	content: counter(step-counter);
+	font-family: 'Domine', serif;
+	font-size: 5em;
+	display: block;
+  	padding: .15em;
+  	width: 100%;
+  	text-align: center;
+  	color: #000;
+  	text-align: center;
+}
+
+.photo {
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+.tiltLeft {
+	transform: rotate(-5deg);
+}
+
+.tiltRight {
+	transform: rotate(5deg);
+}
+
+.customList h2 {
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.75em;
+}
+
+.credit {
+	font-size: .85em;
+	color: #777;
+}
+
+.credit a {
+	color: #333;
+	text-decoration: none;
+	font-style: italic;
+}
+
+/*---BREAK JUST FOR PHOTO SIZE---*/
+
+@media screen and (min-width: 35em) {
+	.photo {
+		width: 65%;
+	}
+}
+
+/*------BREAKPOINT 1------*/
+
+@media screen and (min-width: 47.5em) {
+	header {
+		height: 70vh;
+		height: 100vh;
+	}
+
+	header img {
+		margin-top: -32%;
+	}
+
+	main h1 {
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		color: #fff;
+		width: 40%;
+		line-height: .65;
+	}
+
+	.pageDescription {
+		position: absolute;
+		top: 55%;
+		left: 5%;
+		color: #fff;
+		width: 45%;
+		line-height: 1.75;
+	}
+
+	.customList {
+		margin: 2em 0;
+	}
+
+	.customList li {
+		width: 38%;
+		padding: 5%;
+		float: left;
+	}
+
+	.photo {
+		width: 100%;
+	}
+
+	.customList li:before {
+		width: 50%;
+		margin: auto;
+	}
+
+	.customList li:first-child {
+		border-right: solid rgba(0,0,0,.2) 2px;
+		border-top: none;
+	}
+
+	.customList li:first-child img {
+		width: 80%;
+	}
+
+	.customList li:nth-child(2) {
+		border-top: none;
+	}
+
+	.customList li:nth-child(3) {
+		width: 86%;
+		margin: 0 auto;
+		border-top: solid rgba(0,0,0,.2) 2px;
+	}
+
+	.customList li:nth-child(3) img {
+		width: 40%;
+		margin: 4em 5%;
+		float: left;
+		transform: none;
+	}
+
+	.customList li p {
+		overflow: hidden;
+	}
+
+	.customList li:nth-child(4) {
+		border-right: solid rgba(0,0,0,.2) 2px;
+	}
+
+	.customList li:nth-child(4) img {
+		width: 75%;
+		transform: rotate(-5deg);
+	}
+
+	.credit {
+		text-align: center;
+	}
+
+}
+
+/*------BREAKPOINT 2------*/
+
+@media screen and (min-width: 60em) {
+
+	main h1 {
+		top: 10%;
+	}
+
+	.pageDescription {
+		top: 42%;
+		left: 5%;
+		width: 40%;
+	}
+
+	p {
+		font-size: 1.15em;
+	}
+
+	.customList li h2 {
+		font-size: 2em;
+	}
+
+	.customList li {
+		width: 50%;
+		padding: 3.5%;
+		box-sizing: border-box;
+	}
+
+	.photo {
+		width: 100%;
+	}
+
+	.customList li:first-child img {
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	.customList li:nth-child(2) img {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.customList li:nth-child(3) {
+		width: 33%;
+		border-right: solid rgba(0,0,0,.2) 2px;
+		border-top: solid rgba(0,0,0,.2) 2px;
+		border-bottom: none;
+		clear: left;
+	}
+
+	.customList li:nth-child(3) img {
+		width: 83%;
+		margin: auto;
+		margin-bottom: 1em;
+		transform: rotateZ(-5deg);
+	}
+
+	.customList li:nth-child(4) {
+		width: 33%;
+		border-top: solid rgba(0,0,0,.2) 2px;
+	}
+
+	.customList li:nth-child(4) img {
+		width: 75%;
+		margin: auto;
+		transform: none;
+	}
+
+	.customList li:nth-child(5) {
+		width: 33%;
+		border-top: solid rgba(0,0,0,.2) 2px;
+	}
+
+}
+
+/*------BREAKPOINT 3------*/
+
+@media screen and (min-width:70em) {
+
+	.pageDescription {
+		top: 45%;
+		left: 5%;
+		width: 35%;
+	}
+
+} 
+
+
+
+
+
+
+
